@@ -6,7 +6,8 @@ class User(AbstractUser):
 
 # Create your models here.
 class Phrases(models.Model):
-    portuguesePhrase = models.CharField(max_length=1000)
-    translatedPhrase = models.CharField(max_length=1000)
+    portuguese = models.CharField(max_length=1000)
+    creoule = models.JSONField(default=list)
+    id = models.AutoField(primary_key=True)
 
 

@@ -8,6 +8,6 @@ class UserAdmin(DefaultUserAdmin):
 
 @admin.register(Phrases)
 class PhrasesAdmin(admin.ModelAdmin):
-    list_display = ('portuguesePhrase', 'translatedPhrase')
+    list_display = ('id', 'portuguese', 'creoule')
 
 # Register your models here.
