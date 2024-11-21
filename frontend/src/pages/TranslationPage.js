@@ -1,5 +1,6 @@
 import styles from './TranslationPage.css';
 import React, { useState } from "react";
+import axios from "axios";
 
 
 // Alterar isto para um ficheiro.json
@@ -29,6 +30,11 @@ export default function TranslationPage() {
   };
 
   const handleSubmit = () => {
+    // Enviar a tradução para o servidor
+    axios.post("/savePhrase/", {
+      "portuguesePhrase":frase,
+      "translatedPhrase":traducao
+    });
     alert(`Obrigado pelo seu contributo`);
   };
 
