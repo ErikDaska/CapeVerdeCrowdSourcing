@@ -1,3 +1,49 @@
-.webPage {
-    margin-left: 100%;
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.frase-container {
+  margin-bottom: 20px;
+}
+
+.frase {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.traducao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
